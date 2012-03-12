@@ -1,0 +1,21 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Toaster Example</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../toaster.min.js"></script>
+<script>
+$(document).ready(function() {
+	var toast = new Toaster('#toaster');
+	toast.success("You've got toast", function () {
+		toast.error('You burnt the toast!!');
+	});
+});
+</script>
+<link rel="stylesheet" type="text/css" href="toaster.css" />
+</head>
+<body>
+<div id="toaster"></div>
+
+</body>
+</html>
