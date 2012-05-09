@@ -1,0 +1,8 @@
+This is a simple toaster jquery plugin that you can use to show notifications.
+
+Use the css to control the look of the toaster. Check out the examples for usage.
+
+I'm using Google's Closure compiler to do the javascript minification/compiling and am including the shell script that I use. It does require that you include the compiler.jar
+file or change the path to include it.
+
+I haven't decided on any licensing as of yet, so just use it if you find it.

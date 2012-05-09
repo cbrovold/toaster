@@ -6,10 +6,16 @@
 <script src="../toaster.min.js"></script>
 <script>
 $(document).ready(function() {
-	var toast = new Toaster('#toaster');
-	toast.success("You've got toast", function () {
-		toast.error('You burnt the toast!!');
-	});
+	$('#toaster').toaster();
+	$.toaster.warn("I'm going to get interupted");
+	setTimeout( function () {
+		$.toaster.success("You've got toast", function () {
+				$.toaster.error('You burnt the toast!!', function () {
+					$.toaster.warn('You might not be able to find toast...');
+				});
+
+		});
+	}, 1500);
 });
 </script>
 <link rel="stylesheet" type="text/css" href="toaster.css" />
